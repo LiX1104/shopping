@@ -20,6 +20,10 @@ const routes = [
     children:[
      {
       path: '',
+      component: () => import('../views/sy/index.vue'),
+     },
+     {
+      path: 'sy',
       name: 'sy',
       component: () => import('../views/sy/index.vue'),
      },
@@ -33,16 +37,16 @@ const routes = [
       name: 'shopping',
       component: () => import('../views/shopping/index.vue'),
      },
-     {
-      path: '/Gwc',
-      name: 'Gwc',
-      component: () => import('../views/shopping/index.vue'),
-     },
-     {
-      path: '/cart',
-      name: 'cart',
-      component: () => import('../views/shopping/cart.vue'),
-     },
+    //  {
+    //   path: '/Gwc',
+    //   name: 'Gwc',
+    //   component: () => import('../views/shopping/index.vue'),
+    //  },
+    //  {
+    //   path: '/cart',
+    //   name: 'cart',
+    //   component: () => import('../views/shopping/cart.vue'),
+    //  },
      {
       path: 'personal',
       name: 'personal',
